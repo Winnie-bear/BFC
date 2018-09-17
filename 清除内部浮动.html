@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #par{
+            border:5px solid #f4d320;
+            width:500px;
+            overflow: hidden; /*触发BFC布局，计算BFC的高度时，浮动元素也参与计算*/
+        }
+        .child{
+            width:100px;
+            height: 150px;
+            border: 3px solid #f5b08e;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="par">
+    <div class="child"></div>
+    <div class="child"></div>
+</div>
+</body>
+</html>
